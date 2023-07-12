@@ -7,4 +7,5 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-This is repo for auth using google api, still have bug on client_id
+This is repo for auth using google api, still have bug on client_id on google callback so its doesnt get through authentication
+
