@@ -9,10 +9,7 @@ class GoogleAuthController extends Controller
 {
     public function redirect()  
     {
-        return Socialite::driver('google')->stateless()->with(
-            ['client_id' => '808195630701-hr4ugpe652kd1srqu59l26h8svv1dl9u.apps.googleusercontent.com'],
-            ['client_secret' => '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'],
-            ['redirect' => 'http://127.0.0.1:8000/api/auth/google/callback'])->redirect()->getTargetUrl();
+        return Socialite::driver('google')->stateless()->redirect()->getTargetUrl();
     }
     public function callbackGoogle() 
     {
